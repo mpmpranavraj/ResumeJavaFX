@@ -1,0 +1,66 @@
+.profile-layout {
+    -fx-background-color: #EBC95E;
+    -fx-background-radius: 0 0 50 50;
+}
+
+.button {
+    -fx-background-color: #EBC95E;
+    -fx-background-radius: 50;
+}
+
+.white-background {
+    -fx-background-color: #fff;
+}
+
+.transparent {
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.experience-layout {
+    -fx-background-radius: 40 50 50 50;
+}
+
+.lgb {
+    -fx-background-color: #F3F3F3;
+}
+
+.LinkedIn {
+    -fx-font-size: 15px;
+    -fx-font-family: Corbel;
+    -fx-background-color: #0073b1;
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media screen and (min-width: 600px) {
+    .LinkedIn {
+        -fx-font-size: 16px;
+        -fx-padding: 12px 24px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .LinkedIn {
+        -fx-font-size: 18px;
+        -fx-padding: 14px 28px;
+    }
+}
+
+.LinkedIn:hover {
+    -fx-background-color: #005582;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 2); 
+    -fx-scale-x: 1.05;
+}
+
+.label:hover {
+    -fx-background-color: #3f3f40;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 2);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="profile" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.resumegui.resumecontroller">
+   <left>
+      <VBox prefHeight="422.0" prefWidth="167.0" styleClass="white-background" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="profiles" alignment="CENTER" prefHeight="247.0" prefWidth="167.0" styleClass="profile-layout" stylesheets="@styles.css">
+               <children>
+                  <ImageView fitHeight="137.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true" styleClass="profile_layout">
+                     <image>
+                        <Image url="@ok.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="41.0" prefWidth="167.0" text="Pranavaraj MPM" textFill="#484848">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Corbel Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label text="BCA @ Christ University">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="239.0" prefWidth="167.0">
+               <children>
+                  <Pane layoutX="10.0" layoutY="139.0" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                  <Label prefHeight="21.0" prefWidth="63.0" text="Contact:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="10.0" prefHeight="21.0" prefWidth="92.0" text="9620507477" textAlignment="CENTER" textFill="#676767">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="10.0" prefHeight="21.0" prefWidth="37.0" text="Email:">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="31.0" prefHeight="17.0" prefWidth="182.0" text="mpmprnavaraj@gmail.com" textFill="#676767">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="LinkedIn" alignment="CENTER" contentDisplay="CENTER" minHeight="30.0" mnemonicParsing="false" onAction="#LinkedIn" prefHeight="30.0" prefWidth="112.0" styleClass="LinkedIn" stylesheets="@styles.css" text="LinkedIn " textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Corbel Bold" size="10.0" />
+                     </font>
+                  </Button>
+                  <Pane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="white-background" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="524.0">
+               <children>
+                  <Label prefHeight="60.0" prefWidth="127.0" text=" Experience">
+                     <font>
+                        <Font name="Corbel Bold" size="23.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ImageView fitHeight="34.0" fitWidth="80.0" nodeOrientation="INHERIT" opacity="0.31" pickOnBounds="true" preserveRatio="true" styleClass="profile_layout">
+                     <image>
+                        <Image url="@skill.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="121.0" prefWidth="521.0" styleClass="white-background" stylesheets="@styles.css">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="105.0" prefWidth="146.0" style="-fx-background-color: #54D39D;" styleClass="experience-layout" stylesheets="@styles.css" text="Laantek Solutions " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="105.0" prefWidth="174.0" style="-fx-background-color: #70B8D9;" styleClass="experience-layout" stylesheets="@styles.css" text="TCS World 10k Marathon" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="105.0" prefWidth="146.0" style="-fx-background-color: #E37A7A;" styleClass="experience-layout" stylesheets="@styles.css" text="L&amp;T Edutech Course" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <Label prefHeight="43.0" prefWidth="119.0" text="Skills ">
+               <font>
+                  <Font name="Corbel Bold" size="23.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="24.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <ScrollPane prefHeight="253.0" prefWidth="519.0" styleClass="transparent" stylesheets="@styles.css">
+                     <content>
+                        <VBox prefHeight="253.0" prefWidth="518.0" styleClass="white-background" stylesheets="@styles.css">
+                           <children>
+                              <HBox prefHeight="41.0" prefWidth="485.0">
+                                 <children>
+                                    <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="39.0" prefWidth="159.0" styleClass="lgb" stylesheets="@styles.css" text="Skills" textFill="#575757">
+                                       <font>
+                                          <Font name="Lucida Sans Demibold Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="55.0" layoutY="10.0" prefHeight="39.0" prefWidth="127.0" styleClass="lgb" stylesheets="@styles.css" text="Organisation Name " textFill="#575757">
+                                       <font>
+                                          <Font name="Lucida Sans Demibold Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="131.0" layoutY="10.0" prefHeight="41.0" prefWidth="94.0" styleClass="lgb" stylesheets="@styles.css" text="Time Period" textFill="#575757">
+                                       <font>
+                                          <Font name="Lucida Sans Demibold Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="291.0" layoutY="10.0" prefHeight="41.0" prefWidth="130.0" styleClass="lgb" stylesheets="@styles.css" text="Work" textFill="#575757">
+                                       <font>
+                                          <Font name="Lucida Sans Demibold Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="34.0" prefWidth="518.0">
+                                 <children>
+                                    <Label prefHeight="41.0" prefWidth="160.0" stylesheets="@styles.css" text="Git,Java Collections, JavaFx" textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="119.0" stylesheets="@styles.css" text="Laantek Solutions " textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="170.0" layoutY="10.0" prefHeight="34.0" prefWidth="85.0" stylesheets="@styles.css" text="1 Month " textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="299.0" layoutY="10.0" prefHeight="34.0" prefWidth="147.0" stylesheets="@styles.css" text="Internship" textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="51.0" prefHeight="34.0" prefWidth="518.0">
+                                 <children>
+                                    <Label prefHeight="41.0" prefWidth="160.0" stylesheets="@styles.css" text="Data Entry And Management " textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="119.0" stylesheets="@styles.css" text="TCS World 10k Marathon" textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="170.0" layoutY="10.0" prefHeight="34.0" prefWidth="85.0" stylesheets="@styles.css" text="3 Days" textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="299.0" layoutY="10.0" prefHeight="34.0" prefWidth="147.0" stylesheets="@styles.css" text="Data Entry" textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="85.0" prefHeight="34.0" prefWidth="518.0">
+                                 <children>
+                                    <Label prefHeight="41.0" prefWidth="160.0" stylesheets="@styles.css" text="Communication, Debate" textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="119.0" stylesheets="@styles.css" text="Youth Parliaement " textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="170.0" layoutY="10.0" prefHeight="34.0" prefWidth="85.0" stylesheets="@styles.css" text="1 Day" textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="299.0" layoutY="10.0" prefHeight="34.0" prefWidth="147.0" stylesheets="@styles.css" text="Participant " textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="51.0" prefHeight="34.0" prefWidth="518.0">
+                                 <children>
+                                    <Label prefHeight="41.0" prefWidth="160.0" stylesheets="@styles.css" text="Tableau " textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="119.0" stylesheets="@styles.css" text="L&amp;T EduTech Course" textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="170.0" layoutY="10.0" prefHeight="34.0" prefWidth="85.0" stylesheets="@styles.css" text="73 days " textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="299.0" layoutY="10.0" prefHeight="34.0" prefWidth="147.0" stylesheets="@styles.css" text="Couse " textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="153.0" prefHeight="34.0" prefWidth="518.0">
+                                 <children>
+                                    <Label prefHeight="41.0" prefWidth="160.0" stylesheets="@styles.css" text="Git,Java Collections, JavaFx" textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="119.0" stylesheets="@styles.css" text="Laantek Solutions " textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="170.0" layoutY="10.0" prefHeight="34.0" prefWidth="85.0" stylesheets="@styles.css" text="1 Month " textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="299.0" layoutY="10.0" prefHeight="34.0" prefWidth="147.0" stylesheets="@styles.css" text="Internship" textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="187.0" prefHeight="34.0" prefWidth="518.0">
+                                 <children>
+                                    <Label prefHeight="41.0" prefWidth="160.0" stylesheets="@styles.css" text="Git,Java Collections, JavaFx" textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="119.0" stylesheets="@styles.css" text="Laantek Solutions " textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="170.0" layoutY="10.0" prefHeight="34.0" prefWidth="85.0" stylesheets="@styles.css" text="1 Month " textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="299.0" layoutY="10.0" prefHeight="34.0" prefWidth="147.0" stylesheets="@styles.css" text="Internship" textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="221.0" prefHeight="34.0" prefWidth="518.0">
+                                 <children>
+                                    <Label prefHeight="41.0" prefWidth="160.0" stylesheets="@styles.css" text="Git,Java Collections, JavaFx" textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="119.0" stylesheets="@styles.css" text="Laantek Solutions " textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="170.0" layoutY="10.0" prefHeight="34.0" prefWidth="85.0" stylesheets="@styles.css" text="1 Month " textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="299.0" layoutY="10.0" prefHeight="34.0" prefWidth="147.0" stylesheets="@styles.css" text="Internship" textFill="#575757">
+                                       <styleClass>
+                                          <String fx:value="lgb" />
+                                          <String fx:value="white-background" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets left="3.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>
